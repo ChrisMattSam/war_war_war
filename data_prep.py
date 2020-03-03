@@ -84,41 +84,4 @@ for index, row in repeat_ids.iteritems():
         test_set[index] = mini
 
     war1[war1['war_id']==index].start_date = test_set
-    
-'Check my work'
 
-#t = 677
-#test_set = war1[war1['war_id'] == t].start_date
-#print(test_set)
-
-# =============================================================================
-# test_set = war1[war1['start_date'] == t].start_year1
-# new_val = min(test_set)
-# print(test_set)
-# 
-# for index, row in test_set.iteritems():
-#     #test_set[index] = new_val
-#     test_set.loc[index] = new_val
-#     
-# print(test_set)
-# =============================================================================
-
-
-
-
-#uniq_id = list(set(war1.war_id))
-#t = uniq_id[0]
-#print(war1[war1['war_id']== t])
-
-
-#matrix = [[0]*2 for i in range(5)]
-
-#df.loc[df['a'] == 1, 'b'].sum()
-# war2 <- aggregate(fatalities ~ war_id + start_year1 + combat_location + war_type + duration, data = war2, sum)
-# war.summary <- as.data.frame(table(war2$war_id))
-# war.summary[order(war.summary$Freq),]
-# =============================================================================
-
-
-
-'I STOPPED HERE!!!'
