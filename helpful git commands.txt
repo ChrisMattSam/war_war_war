@@ -1,0 +1,7 @@
+Delete files from local repo, remote, and remove all commit records of that file:
+
+git filter-branch --force --index-filter \
+"git rm --cached --ignore-unmatch [the file to remove]" \--prune-empty --tag-name-filter cat -- --all
+
+Force push local to remote, useful for when normal push returns error (e.g. after deleting files in local repo and trying to push to reconcile remote repo)
+git push -f origin [the branch name, I normally use "master"]
